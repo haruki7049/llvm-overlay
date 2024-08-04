@@ -19,6 +19,6 @@ self: super: {
         };
     in
     {
-      "18.1.8" = llvmBuilder { version = "18.1.8"; sha256 = ""; };
+      "18.1.8" = llvmBuilder { version = "18.1.8"; sha256 = "1l9wm0g9jrpdf309kxjx7xrzf13h81kz8bbp0md14nrz38qll9la"; };
     };
 }
