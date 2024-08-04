@@ -16,6 +16,24 @@ self: super: {
             repo = "${pname}-project";
             rev = "llvmorg-${version}";
           };
+
+          nativeBuildInputs = with super; [
+            cmake
+            ninja
+            python3
+            git
+          ];
+
+          buildPhase = ''
+            ninja -C build
+          '';
+
+          installPhase = ''
+          '';
+
+          configurePhase = ''
+            cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug
+          '';
         };
     in
     {
