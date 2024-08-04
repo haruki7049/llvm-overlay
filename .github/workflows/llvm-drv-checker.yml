@@ -13,4 +13,4 @@ jobs:
         with:
           nix_path: nixpkgs=channel:nixos-unstable
       - name: Run nix-shell
-        run: nix-shell ./example/18.1.8.nix
+        run: nix-shell ./examples/18.1.8.nix
