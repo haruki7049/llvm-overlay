@@ -3,7 +3,7 @@ on:
   push:
 permissions: {}
 jobs:
-  check-18.1.8:
+  check-18-1-8:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
