@@ -32,7 +32,7 @@ self: super: {
           '';
 
           configurePhase = ''
-            cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug
+            cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
           '';
         };
     in
